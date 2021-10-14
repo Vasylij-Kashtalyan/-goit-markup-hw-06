@@ -85,7 +85,7 @@ a {
   color: var(--link-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: transfomn color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header {
   max-width: 1600px;
@@ -576,6 +576,59 @@ a {
   height: 20px;
   fill: var(--primary-white-color);
 }
+/* ---------Подпишитесь на рассылку-------- */
+.footer-subscription {
+  margin-left: 93px;
+}
+.form-footer {
+  display: flex;
+}
+.footer-input-join {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: block;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.footer-input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 14px;
+
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-button {
+  width: 200px;
+  position: relative;
+  padding-right: 28px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input-icon {
+  position: absolute;
+  top: 27%;
+  right: 25px;
+}
+
 /* ----------------------------Портфоли ------------------ */
 
 .filters-button {
@@ -589,6 +642,8 @@ a {
 
   border-radius: 4px;
   background: var(--filters-background);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-button:hover,
@@ -598,9 +653,6 @@ a {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters {
   display: flex;
@@ -720,11 +772,13 @@ a {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
   top: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250mscubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -735,24 +789,29 @@ a {
 }
 .modal {
   position: relative;
-  background-color: #ffffff;
   width: 528px;
   height: 581px;
   border-radius: 10px;
+
+  background-color: #ffffff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
+  display: flex;
   position: absolute;
-  right: 10px;
-  top: 10px;
   background-color: transparent;
-  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+
   fill: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover,
 .modal-close:focus {
@@ -765,6 +824,7 @@ a {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--link-text-color);
   padding-top: 29px;
 }
@@ -791,12 +851,14 @@ a {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
   padding-left: 40px;
   padding-right: 20px;
+
   outline: none;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-wrapper {
   display: block;
@@ -804,21 +866,25 @@ a {
 }
 .modal-icon {
   position: absolute;
-  top: 54%;
+  top: 67%;
   left: 10px;
   height: 18px;
   width: 18px;
+
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text-input {
   resize: none;
   width: 100%;
   height: 120px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
   outline: none;
   padding: 10px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text-input::placeholder {
   font-family: Roboto;
@@ -835,13 +901,20 @@ a {
   letter-spacing: 0.03em;
   align-items: center;
 
-  color: var(--primary-text-color);
   margin-top: 20px;
   padding-left: 37px;
   margin-bottom: 30px;
+  color: var(--primary-text-color);
+
+  position: relative;
 }
 .input-check {
-  margin-right: 8px;
+  margin-right: -8px;
+}
+.input-terms {
+  margin-left: 4px;
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 .modal-button {
   display: block;
@@ -849,10 +922,29 @@ a {
   width: 200px;
   height: 50px;
 }
-.modal-input:focus {
+.modal-input:focus,
+.modal-text-input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-input:focus + .modal-icon {
+.input-wrapper:focus-within > .modal-icon {
   fill: var(--accent-color);
+}
+
+.check-icon {
+  position: absolute;
+}
+.modal-check span {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 3px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-check:checked + span {
+  background-color: var(--accent-color);
+  border: none;
 }

@@ -152,5 +152,11 @@
 <symbol id="icon-person-black" viewBox="0 0 30 32">
 <path d="M15.158 16c2.792 0 5.053-2.261 5.053-5.053s-2.261-5.053-5.053-5.053c-2.792 0-5.053 2.261-5.053 5.053s2.261 5.053 5.053 5.053zM15.158 18.526c-3.373 0-10.105 1.693-10.105 5.053v1.263c0 0.695 0.568 1.263 1.263 1.263h17.684c0.695 0 1.263-0.568 1.263-1.263v-1.263c0-3.36-6.733-5.053-10.105-5.053z"></path>
 </symbol>
+<symbol id="icon-vector" viewBox="0 0 42 32">
+<path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
+</symbol>
+<symbol id="icon-telegram" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M32 0l-32 18 10.227 3.788 15.773-14.788-11.998 16.186 0.010 0.004-0.012-0.004v8.814l5.735-6.691 7.265 2.691 5-28z"></path>
+</symbol>
 </defs>
 </svg>

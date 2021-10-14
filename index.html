@@ -427,7 +427,7 @@
        </div>
           
         </address>
-
+<!-- Присоединайтесь -->
         <div class="footer-social">
           <em class="footer-social-join">
             Присоединайтесь
@@ -466,12 +466,26 @@
               </a>
             </li>
           </ul>
-
         </div>
+<!-- Подпишитесь на рассылку -->
+          <form class="footer-subscription">
+              <em class="footer-input-join">Подпишитесь на рассылку</em>
+            <div class="form-footer">
+              <input class="footer-input" type="email" placeholder="E-mail">
+              <button class="button input-button" type="submit">
+                Подписаться
+                <svg class="footer-input-icon" width="24" height="24">
+                  <use href="./images/icons.svg.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            
+            </div>
+          </form>
+         
     </div>
   </footer>
-  <!-- -----------Модальное окно------------- -->
-  <div class="backdrop is-hidde" data-modal>
+<!-- -----------Модальное окно------------- -->
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       
       <form class="modal-form">
@@ -510,10 +524,20 @@
           </label>
         </div>
 
-        <label class="modal-check">
-         <input class="input-check" type="checkbox">
-         Соглашаюсь с рассылкой и принимаю  <a href="">Условия договора</a>
-        </label>
+        
+          <label class="modal-check">
+            
+          <input class="input-check visually-hidden" type="checkbox">
+          <span>
+            <svg class="check-icon" width="11" height="8">
+              <use href="./images/icons.svg.svg#icon-vector"></use>
+            </svg>
+          </span>
+          Соглашаюсь с рассылкой и принимаю<a href="" class="input-terms">Условия договора</a>
+            
+          </label>
+        
+        
 
         <button type="submit" class="modal-button button">Отправить</button>
       </form>
