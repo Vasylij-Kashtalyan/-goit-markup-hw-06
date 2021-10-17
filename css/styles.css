@@ -475,8 +475,10 @@ a {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: var(--hero-background);
+}
+.footer-address {
+  flex-grow: 1;
 }
 .web {
   color: var(--primary-white-color);
@@ -579,11 +581,14 @@ a {
 /* ---------Подпишитесь на рассылку-------- */
 .footer-subscription {
   margin-left: 93px;
+  width: 570px;
 }
 .form-footer {
   display: flex;
+  width: 100%;
 }
 .footer-input-join {
+  display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -591,42 +596,43 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: block;
-  color: var(--primary-white-color);
   margin-bottom: 20px;
+
+  color: var(--primary-white-color);
 }
 .footer-input {
+  display: flex;
   font-family: Roboto;
   font-style: normal;
+  align-items: center;
+  background: none;
+  box-sizing: border-box;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
   width: 358px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 14px;
-
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
-  position: relative;
-  padding-right: 28px;
+  margin-left: 12px;
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-input-icon {
-  position: absolute;
-  top: 27%;
-  right: 25px;
+  margin-left: 10px;
 }
 
 /* ----------------------------Портфоли ------------------ */
@@ -818,6 +824,11 @@ a {
   fill: var(--accent-color);
   cursor: pointer;
 }
+.modal-form {
+  position: absolute;
+  width: 100%;
+  padding: 40px;
+}
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -826,19 +837,16 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--link-text-color);
-  padding-top: 29px;
 }
-.modal-form {
-  position: absolute;
-  width: 100%;
-  padding-bottom: 51px;
-}
+
 .form-container {
   margin-top: 11px;
-  padding-left: 36px;
-  padding-right: 44px;
 }
 .modal-label {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+
   font-family: Roboto;
   font-size: 12px;
   line-height: 1.17;
@@ -846,11 +854,14 @@ a {
 
   color: var(--primary-text-color);
 }
+.modal-label:last-child {
+  margin-bottom: 0;
+}
 .modal-input {
   display: block;
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
+  margin-top: 4px;
   border-radius: 4px;
   padding-left: 40px;
   padding-right: 20px;
@@ -860,10 +871,7 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-wrapper {
-  display: block;
-  position: relative;
-}
+
 .modal-icon {
   position: absolute;
   top: 67%;
@@ -875,12 +883,15 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text-input {
+  display: block;
+  outline: none;
   resize: none;
+
   width: 100%;
   height: 120px;
-  border-radius: 4px;
-  outline: none;
   padding: 10px;
+  margin-top: 4px;
+  border-radius: 4px;
 
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -895,21 +906,18 @@ a {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-check {
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  align-items: center;
-
   margin-top: 20px;
-  padding-left: 37px;
   margin-bottom: 30px;
-  color: var(--primary-text-color);
 
-  position: relative;
-}
-.input-check {
-  margin-right: -8px;
+  color: var(--primary-text-color);
 }
 .input-terms {
   margin-left: 4px;
@@ -927,7 +935,7 @@ a {
   border-color: var(--accent-color);
 }
 
-.input-wrapper:focus-within > .modal-icon {
+.modal-label:focus-within > .modal-icon {
   fill: var(--accent-color);
 }
 
